@@ -1683,15 +1683,15 @@ function reMgrGuideHtml() {
             <div class="row"><b>기존 보험 해지하고 갈아타면 유리</b><span class="mg-lv w">주의</span></div>
             <div class="sub">인용 보험업법 제97조 · 사유 부당 승환계약 유도 소지</div>
           </div></div></div>
-      <div class="mg-sec"><div class="mg-t">⑦ 다른 예 — 여신전문금융업법 / 대부업법</div>
+      <div class="mg-sec"><div class="mg-t">⑦ 다른 예 — 금융소비자보호법 제17조(적합성 원칙)</div>
         <div class="mg-step">
-          <div class="mg-kv"><span>법령·표시</span><b>여신전문금융업법 제14조의5 (모집질서 유지)</b></div>
-          <div class="mg-kv"><span>위반유형</span><b>과다 이익 미끼 모집</b></div>
+          <div class="mg-kv"><span>법령·표시</span><b>금융소비자보호법 제17조 (적합성 원칙)</b></div>
+          <div class="mg-kv"><span>위반유형</span><b>부적합 권유 (무차별·취약고객)</b></div>
           <div class="mg-ex">
-            <div class="row"><b>카드 발급 시 캐시백 증정</b><span class="mg-lv w">주의</span></div>
-            <div class="sub">인용 여신전문금융업법 제14조의5 · 사유 과다 이익 제공 미끼 모집</div>
-            <div class="row"><b>무이자</b><span class="mg-lv w">주의</span></div>
-            <div class="sub">인용 대부업법 제9조 · 사유 대부조건(이자율) 오인 소지</div>
+            <div class="row"><b>누구나 초보자도 고위험 투자</b><span class="mg-lv w">주의</span></div>
+            <div class="sub">인용 금소법 제17조 · 사유 적합성 확인 없는 무차별 권유</div>
+            <div class="row"><b>은퇴자 노후자금으로 ELS 고수익</b><span class="mg-lv w">주의</span></div>
+            <div class="sub">인용 금소법 제17조 · 사유 취약고객 부적합 권유</div>
           </div></div></div>
       <div class="mg-sec"><div class="mg-t">⑧ 원본 vs 준법담당 추가 규칙</div>
         <ul>
