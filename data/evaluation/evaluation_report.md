@@ -1,5 +1,8 @@
 # Cross-Check AI Evaluation Report
 
+> **Note.** This report is an **internal regression benchmark**: 105 synthetic cases, **LLM layer OFF** (rule-first baseline).
+> It is a separate evaluation from the field-case set cited in the proposal/spec deck — **106 cases (20 real enforcement + 86 statutory), violation recall 0.842 / precision 0.931, LLM ON** — which measures end-to-end performance on real regulator-detected cases. The two sets serve different purposes and their numbers are not comparable.
+
 - Generated: 2026-07-01 02:18
 - LLM layer: OFF
 - Total cases: 105

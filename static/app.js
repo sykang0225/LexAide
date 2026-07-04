@@ -1456,7 +1456,10 @@ async function reSaveAdjust(confirmJump) {
 
 // ── 표현 위험 등록(미탐 보강 · 새 규칙 추가) ──
 function reKwToPattern(kw) {
-  return kw.trim().replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s*');
+  // 쉼표로 단어를 나누면 사이에 다른 말이 껴도 잡는다: '보험금, 무조건, 지급' → 보험금.{0,10}무조건.{0,10}지급
+  const one = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&').replace(/\s+/g, '\\s*');
+  const parts = kw.split(/[,，]/).map(p => p.trim()).filter(Boolean);
+  return parts.length > 1 ? parts.map(one).join('.{0,10}') : one(kw.trim());
 }
 async function reOpenAdd(mode, presetKw, region) {
   const m = reEnsureModal();
@@ -1901,10 +1904,12 @@ function rePatternToChips(pattern) {
   });
   const uniq = [...new Set(toks)].slice(0, 14);
   if (!uniq.length) {
-    // 단일 키워드 패턴(전문가 추가 룰 등): '평생\s*보장' → '평생 보장' 칩으로 표시
-    const w = pattern.replace(/\\s\*/g, ' ').replace(/\\[a-z]/gi, '').replace(/[.*+?^${}\[\]]/g, '').trim();
-    if (w && w.length <= 24 && !/[()|\\]/.test(w)) {
-      return `<span class="mgr-kw">${esc(w)}</span>`;
+    // 단일 키워드('평생\s*보장') 또는 쉼표 분리('보험금.{0,10}무조건.{0,10}지급') 패턴 → 단어별 칩으로 표시
+    const segs = pattern.split(/\.\{0,\d+\}/).map(s =>
+      s.replace(/\\s\*/g, ' ').replace(/\\[a-z]/gi, '').replace(/[.*+?^${}\[\]]/g, '').trim()
+    ).filter(Boolean);
+    if (segs.length && segs.every(w => w.length <= 24 && !/[()|\\]/.test(w))) {
+      return segs.map(w => `<span class="mgr-kw">${esc(w)}</span>`).join('');
     }
     return `<span class="mgr-pat-raw" title="정규식">${esc(pattern)}</span>`;
   }
