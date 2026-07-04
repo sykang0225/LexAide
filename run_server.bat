@@ -1,6 +1,6 @@
 @echo off
 chcp 949 >nul
-title Cross-Check AI Server
+title LexAide AI Server
 cd /d "%~dp0"
 
 set USE_TF=0
