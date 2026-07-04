@@ -1,0 +1,64 @@
+{
+    "source":  "OJK official PDF",
+    "source_url":  "https://www.ojk.go.id/id/regulasi/Documents/Pages/Pelindungan-Konsumen-dan-Masyarakat-di-Sektor-Jasa-Keuangan/POJK%2022%20Tahun%202023%20Pelindungan%20Konsumen%20dan%20Masyarakat%20di%20Sektor%20Jasa%20Keuangan.pdf",
+    "law_id":  "POJK No. 22 Tahun 2023",
+    "official_name":  "Peraturan Otoritas Jasa Keuangan Nomor 22 Tahun 2023 tentang Pelindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan",
+    "audit_note":  "Current OJK consumer protection regulation replacing POJK No. 6/POJK.07/2022. This local map covers MVP citation verification for advertising, marketing, product information, cost/risk disclosure, suitability, and post-sale consistency checks.",
+    "articles":  {
+                     "3":  {
+                               "title":  "Prinsip Pelindungan Konsumen",
+                               "summary_ko":  "PUJK는 소비자보호 원칙을 적용해야 하며, 상품·서비스 정보의 개방성과 투명성, 공정한 대우와 책임 있는 영업행위, 건전한 경쟁 등을 원칙으로 한다.",
+                               "recommended_use":  "광고·비교표현·소비자보호 일반 원칙의 상위 근거",
+                               "page":  5
+                           },
+                     "29":  {
+                                "title":  "Penyediaan Informasi Produk dan Layanan",
+                                "summary_ko":  "PUJK는 상품·서비스 정보를 명확하고, 정확하고, 정직하며, 접근 가능하고, 잠재적으로 오인을 유발하지 않도록 제공해야 한다.",
+                                "recommended_use":  "확정수익, 무위험, 과장, 오인 가능 광고의 핵심 근거",
+                                "page":  22
+                            },
+                     "30":  {
+                                "title":  "Ringkasan Informasi Produk dan/atau Layanan",
+                                "summary_ko":  "상품·서비스 요약 정보에는 상품명, 발행자, 주요 특징, 혜택, 위험, 요건·절차, 비용, 추가 정보 및 필요한 경우 시뮬레이션/과거 실적 정보가 포함되어야 한다.",
+                                "recommended_use":  "위험·비용·조건 미고지 판단",
+                                "page":  23
+                            },
+                     "32":  {
+                                "title":  "Penyampaian Informasi Produk dan Layanan",
+                                "summary_ko":  "PUJK는 상품·서비스 정보를 명확하고 정확하며 정직하고 접근 가능하며 오인 가능성이 없도록 제공해야 하며, 이는 마케팅 과정과 계약 체결 전에 전달되어야 한다.",
+                                "recommended_use":  "마케팅·광고 단계의 정보제공 의무 판단",
+                                "page":  25
+                            },
+                     "33":  {
+                                "title":  "Penyampaian Ringkasan Informasi Produk dan/atau Layanan",
+                                "summary_ko":  "PUJK는 소비자가 상품·서비스 이용을 결정하기 전 일반 요약 정보를 제공하고, 계약 전 개인화된 요약 정보를 제공해야 한다.",
+                                "recommended_use":  "계약 전 핵심정보 제공 여부 및 소비자 이해 확인",
+                                "page":  25
+                            },
+                     "35":  {
+                                "title":  "Pemasaran Produk dan Layanan",
+                                "summary_ko":  "상품·서비스 제안, 요약정보, 프로모션 또는 광고에는 PUJK 명칭/로고 및 OJK 인허가·감독 문구를 표시해야 한다.",
+                                "recommended_use":  "광고 주체 표시, OJK 감독 표시 검토",
+                                "page":  27
+                            },
+                     "36":  {
+                                "title":  "Larangan Penyalahgunaan Keadaan dan Penawaran Tanpa Izin",
+                                "summary_ko":  "PUJK는 소비자가 다른 선택을 하기 어려운 상황을 악용하여 손해 또는 손해 가능성이 있는 상품·서비스를 제안해서는 안 되며, 허가 없는 상품·서비스를 판매·제안해서는 안 된다.",
+                                "recommended_use":  "부당권유, 취약상황 악용, 무허가 상품 권유 판단",
+                                "page":  27
+                            },
+                     "37":  {
+                                "title":  "Kesesuaian Produk dan/atau Layanan",
+                                "summary_ko":  "PUJK는 제안하는 상품·서비스와 소비자의 필요 및 능력 사이의 적합성을 고려해야 하며, 이를 문서화해야 한다.",
+                                "recommended_use":  "적합성 원칙, 고객상황 대비 상품 권유 검토",
+                                "page":  28
+                            },
+                     "53":  {
+                                "title":  "Layanan kepada Konsumen",
+                                "summary_ko":  "PUJK는 소비자에게 적법하게 서비스해야 하며, 광고·설명·프로모션에서 표시한 정보와 다른 상품·서비스를 제공해서는 안 된다.",
+                                "recommended_use":  "광고 내용과 실제 제공 조건의 불일치 검토",
+                                "page":  41
+                            }
+                 },
+    "page_note":  "page = 공식 PDF(131p) 내 조문 시작 페이지 실측값 (2026-07-02, pdfplumber \u0027Pasal N\u0027 단독행 탐색)"
+}

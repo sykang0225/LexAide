@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="ko" translate="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google" content="notranslate">
+  <title>LexAide | JB금융그룹</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="/static/style.css?v=56">
+</head>
+<body>
+<div class="app-shell">
+
+  <!-- ═══ 상단 헤더 (animated gradient + orbs) ═══ -->
+  <header class="console-top">
+    <div class="ct-orb ct-orb-1"></div>
+    <div class="ct-orb ct-orb-2"></div>
+    <div class="brand-lockup">
+      <img src="/static/jb_logo.png" alt="JB금융그룹" class="brand-logo-img">
+      <div>
+        <div class="brand-title">LexAide</div>
+        <div class="brand-sub">한·인니 금융광고 준법심의 Co-pilot</div>
+      </div>
+    </div>
+    <div class="top-status">
+      <span>금소법 · OJK POJK 이중관할</span>
+      <span class="top-pill-on">Human-in-the-loop</span>
+      <button type="button" id="tree-mgr-btn" style="background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.4);padding:5px 13px;border-radius:8px;font-size:.8rem;font-weight:500;cursor:pointer">🗂️ 규칙 트리 관리</button>
+      <button type="button" id="history-btn" style="background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.4);padding:5px 13px;border-radius:8px;font-size:.8rem;font-weight:500;cursor:pointer">📋 심의 이력</button>
+    </div>
+  </header>
+
+  <main class="console-main">
+
+    <!-- ═══ 탭 ═══ -->
+    <nav class="tabs">
+      <button class="tab active" data-tab="ko">🇰🇷 한국어 심의</button>
+      <button class="tab" data-tab="id">🇮🇩 인니어 심의</button>
+      <button class="tab" data-tab="cross">🔁 교차검증</button>
+    </nav>
+
+    <!-- ═══ 탭 패널: 한국어 ═══ -->
+    <section class="tab-panel active" data-panel="ko">
+      <div class="review-grid">
+        <aside class="work-pane">
+          <div class="pane-kicker">Input</div>
+          <h2>한국어 광고 심의</h2>
+          <p class="pane-desc">금소법 제17조·제21조·제22조 트리와 Agent 검증을 적용합니다.</p>
+
+          <label class="field-lbl">광고 문구</label>
+          <textarea id="ko-text" placeholder="광고 문구를 입력하거나 파일을 업로드하세요."></textarea>
+
+          <div class="upload-row">
+            <label class="upload-btn">파일 업로드
+              <input type="file" id="ko-file" accept=".txt,.md,.csv,.pdf,.pptx,.docx,.hwp,.hwpx,.png,.jpg,.jpeg,.webp" hidden>
+            </label>
+            <span class="upload-status" id="ko-file-status">PPTX·PDF·DOCX·HWP·이미지 지원</span>
+          </div>
+
+          <div id="ko-img-preview" class="input-img-preview" hidden></div>
+
+          <button class="btn-primary full" id="ko-run">심의 시작</button>
+        </aside>
+
+        <section class="decision-pane">
+          <div class="decision-head">
+            <div class="pane-kicker">Decision</div>
+            <h2>Agent 판정</h2>
+          </div>
+          <div id="ko-result" class="result-empty">
+            <b>심의 전</b>
+            <span>Agent 1~4가 실행되면 최종 판정과 조문 근거가 이 영역에 정리됩니다.</span>
+          </div>
+          <div class="decision-actions" id="ko-hitl"></div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ═══ 탭 패널: 인니어 ═══ -->
+    <section class="tab-panel" data-panel="id">
+      <div class="review-grid">
+        <aside class="work-pane">
+          <div class="pane-kicker">Input</div>
+          <h2>인니어 광고 심의</h2>
+          <p class="pane-desc">OJK POJK No. 22 Tahun 2023 기준으로 광고·정보제공·부당권유 리스크를 검토합니다.</p>
+
+          <label class="field-lbl">광고 문구</label>
+          <textarea id="id-text" placeholder="Masukkan teks iklan, atau unggah file."></textarea>
+
+          <div class="upload-row">
+            <label class="upload-btn">파일 업로드
+              <input type="file" id="id-file" accept=".txt,.md,.csv,.pdf,.pptx,.docx,.hwp,.hwpx,.png,.jpg,.jpeg,.webp" hidden>
+            </label>
+            <span class="upload-status" id="id-file-status">PPTX·PDF·DOCX·HWP·이미지 지원</span>
+          </div>
+
+          <div id="id-img-preview" class="input-img-preview" hidden></div>
+
+          <button class="btn-primary full" id="id-run">심의 시작</button>
+        </aside>
+
+        <section class="decision-pane">
+          <div class="decision-head">
+            <div class="pane-kicker">Decision</div>
+            <h2>Agent 판정</h2>
+          </div>
+          <div id="id-result" class="result-empty">
+            <b>심의 전</b>
+            <span>OJK 조문 검증까지 함께 표시됩니다.</span>
+          </div>
+          <div class="decision-actions" id="id-hitl"></div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ═══ 탭 패널: 교차검증 ═══ -->
+    <section class="tab-panel" data-panel="cross">
+      <div class="cross-grid">
+        <aside class="work-pane cross-input">
+          <div class="pane-kicker">Input</div>
+          <h2>한·인니 교차검증</h2>
+          <p class="pane-desc">국내 원문과 현지어 번역본의 준법 등급 및 의미 불일치를 함께 검토합니다.</p>
+
+          <label class="field-lbl">한국어 원본</label>
+          <textarea id="cross-ko" placeholder="한국어 원본 광고 문구"></textarea>
+          <div class="upload-row compact">
+            <label class="upload-btn">원본 파일
+              <input type="file" id="cross-ko-file" accept=".txt,.md,.csv,.pdf,.pptx,.docx,.hwp,.hwpx,.png,.jpg,.jpeg,.webp" hidden>
+            </label>
+            <span class="upload-status" id="cross-ko-file-status">한국어 광고물</span>
+          </div>
+
+          <label class="field-lbl">인도네시아어 번역본</label>
+          <textarea id="cross-id" placeholder="인도네시아어 번역 광고 문구"></textarea>
+          <div class="upload-row compact">
+            <label class="upload-btn">번역본 파일
+              <input type="file" id="cross-id-file" accept=".txt,.md,.csv,.pdf,.pptx,.docx,.hwp,.hwpx,.png,.jpg,.jpeg,.webp" hidden>
+            </label>
+            <span class="upload-status" id="cross-id-file-status">인니어 광고물</span>
+          </div>
+
+          <button class="btn-primary full" id="cross-run">교차 심의 시작</button>
+        </aside>
+
+        <section class="decision-pane cross-decision">
+          <div class="decision-head">
+            <div class="pane-kicker">Cross-Check</div>
+            <h2>양국 규제·번역 정합성 결과</h2>
+          </div>
+          <div id="cross-result" class="result-empty">
+            <b>교차검증 전</b>
+            <span>양쪽 광고 문구를 입력하면 금소법/OJK 판정과 번역 리스크가 정리됩니다.</span>
+          </div>
+          <div class="decision-actions" id="cross-hitl"></div>
+        </section>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ 푸터 ═══ -->
+  <footer class="console-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="/static/jb_logo.png" alt="JB금융그룹" class="footer-logo-img">
+        <div>
+          <div class="footer-title">JB금융그룹 Fin:AI Challenge 2026</div>
+          <div class="footer-sub">JBIG 9th · LexAide · Compliance Review Console</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ═══ 로딩 오버레이 (step indicator) ═══ -->
+<div class="loading-overlay" id="loading">
+  <div class="loading-card">
+    <div class="loading-spinner-wrap">
+      <div class="spinner"></div>
+    </div>
+    <div class="loading-steps">
+      <div class="loading-step" id="lstep-1">
+        <div class="lstep-dot"></div>
+        <div class="lstep-text">Agent 1: 언어 감지 중...</div>
+      </div>
+      <div class="loading-step" id="lstep-2">
+        <div class="lstep-dot"></div>
+        <div class="lstep-text">Agent 2: 규칙 탐지 중...</div>
+      </div>
+      <div class="loading-step" id="lstep-3">
+        <div class="lstep-dot"></div>
+        <div class="lstep-text">Agent 3: 교차검증 중...</div>
+      </div>
+      <div class="loading-step" id="lstep-4">
+        <div class="lstep-dot"></div>
+        <div class="lstep-text">Agent 4: 인용 검증 중...</div>
+      </div>
+    </div>
+    <div class="loading-text" id="loading-main-text">심의 진행 중...</div>
+  </div>
+</div>
+
+<!-- ═══ HITL 결정 모달 (승인 / 수정 요청 / 반려) ═══ -->
+<div class="modal-overlay" id="hitl-modal">
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-head">
+      <span class="modal-badge" id="modal-badge"></span>
+      <div class="modal-title" id="modal-title"></div>
+      <div class="modal-sub" id="modal-sub"></div>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-foot" id="modal-foot"></div>
+  </div>
+</div>
+
+<!-- ═══ 심의 이력 모달 ═══ -->
+<div class="modal-overlay" id="history-modal">
+  <div class="modal-card" role="dialog" aria-modal="true" style="max-width:780px;width:92%">
+    <div class="modal-head">
+      <div class="modal-title">심의 이력 · 승인 로그</div>
+      <div class="modal-sub">준법관리자의 승인 / 수정요청 / 반려 기록 (최근순)</div>
+    </div>
+    <div class="modal-body" id="history-list" style="max-height:55vh;overflow:auto"></div>
+    <div class="modal-foot">
+      <button type="button" class="modal-btn primary" data-history-close>닫기</button>
+    </div>
+  </div>
+</div>
+
+<script src="/static/app.js?v=61"></script>
+</body>
+</html>

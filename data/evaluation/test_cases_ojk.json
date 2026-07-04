@@ -1,0 +1,242 @@
+[
+  {
+    "id": "ID_PASS_001",
+    "label": "PASS",
+    "language": "id",
+    "category": "risk disclosure",
+    "text": "Produk ini memiliki risiko kerugian pokok. Bacalah prospektus sebelum mengambil keputusan.",
+    "rationale": "Risiko kerugian dan prospectus disclosure included"
+  },
+  {
+    "id": "ID_PASS_002",
+    "label": "PASS",
+    "language": "id",
+    "category": "fee disclosure",
+    "text": "Imbal hasil dapat berubah sesuai kondisi pasar dan biaya pengelolaan akan dikenakan sesuai ketentuan.",
+    "rationale": "Return uncertainty and fee disclosure included"
+  },
+  {
+    "id": "ID_PASS_003",
+    "label": "PASS",
+    "language": "id",
+    "category": "loan condition",
+    "text": "Suku bunga dan limit pinjaman ditentukan berdasarkan hasil penilaian kredit dan dapat berbeda untuk setiap nasabah.",
+    "rationale": "Loan condition and credit assessment disclosed"
+  },
+  {
+    "id": "ID_PASS_004",
+    "label": "PASS",
+    "language": "id",
+    "category": "non guarantee",
+    "text": "Produk investasi tidak menjamin keuntungan dan dapat mengalami kerugian sesuai kondisi pasar.",
+    "rationale": "No guarantee and loss possibility stated"
+  },
+  {
+    "id": "ID_PASS_005",
+    "label": "PASS",
+    "language": "id",
+    "category": "balanced promotion",
+    "text": "Informasi produk, manfaat, risiko, biaya, dan syarat layanan dapat dilihat pada ringkasan informasi produk.",
+    "rationale": "Balanced product information"
+  },
+  {
+    "id": "ID_PASS_006",
+    "label": "PASS",
+    "language": "id",
+    "category": "ojk identity",
+    "text": "Bank terdaftar dan diawasi oleh OJK. Syarat dan ketentuan berlaku.",
+    "rationale": "OJK identity and terms included"
+  },
+  {
+    "id": "ID_PASS_007",
+    "label": "PASS",
+    "language": "id",
+    "category": "investment risk",
+    "text": "Kinerja masa lalu tidak mencerminkan kinerja masa depan dan investasi mengandung risiko.",
+    "rationale": "Past performance disclaimer"
+  },
+  {
+    "id": "ID_PASS_008",
+    "label": "PASS",
+    "language": "id",
+    "category": "fee and tax",
+    "text": "Biaya administrasi, pajak, dan biaya lain dapat dikenakan sesuai ketentuan produk.",
+    "rationale": "Cost disclosure"
+  },
+  {
+    "id": "ID_PASS_009",
+    "label": "PASS",
+    "language": "id",
+    "category": "eligibility",
+    "text": "Persetujuan produk bergantung pada hasil verifikasi data dan profil risiko nasabah.",
+    "rationale": "Eligibility condition disclosed"
+  },
+  {
+    "id": "ID_PASS_010",
+    "label": "PASS",
+    "language": "id",
+    "category": "neutral wording",
+    "text": "Produk ini bertujuan memberikan potensi imbal hasil sesuai kondisi pasar.",
+    "rationale": "Potential return, not guaranteed"
+  },
+  {
+    "id": "ID_WARN_001",
+    "label": "WARNING",
+    "language": "id",
+    "category": "implicit return emphasis",
+    "text": "Produk yang memberikan keuntungan stabil untuk kebutuhan masa depan Anda.",
+    "rationale": "Implicit stable return claim"
+  },
+  {
+    "id": "ID_WARN_002",
+    "label": "WARNING",
+    "language": "id",
+    "category": "best claim",
+    "text": "Pilihan investasi unggulan untuk semua nasabah.",
+    "rationale": "Unsupported superiority tone"
+  },
+  {
+    "id": "ID_WARN_003",
+    "label": "WARNING",
+    "language": "id",
+    "category": "missing condition",
+    "text": "Limit pinjaman hingga Rp500 juta dengan proses cepat.",
+    "rationale": "Maximum limit promoted without assessment condition"
+  },
+  {
+    "id": "ID_WARN_004",
+    "label": "WARNING",
+    "language": "id",
+    "category": "fee omission",
+    "text": "Investasi dengan imbal hasil menarik setiap tahun.",
+    "rationale": "Return promoted without cost/risk context"
+  },
+  {
+    "id": "ID_WARN_005",
+    "label": "WARNING",
+    "language": "id",
+    "category": "risk salience",
+    "text": "Nikmati imbal hasil tinggi. Risiko mengikuti ketentuan produk.",
+    "rationale": "Risk disclosure exists but weak and generic"
+  },
+  {
+    "id": "ID_WARN_006",
+    "label": "WARNING",
+    "language": "id",
+    "category": "comparison",
+    "text": "Lebih menguntungkan dibanding produk biasa.",
+    "rationale": "Comparison without objective basis"
+  },
+  {
+    "id": "ID_WARN_007",
+    "label": "WARNING",
+    "language": "id",
+    "category": "fast process",
+    "text": "Ajukan sekarang dan dapatkan keputusan investasi terbaik.",
+    "rationale": "Pressure and best claim context"
+  },
+  {
+    "id": "ID_WARN_008",
+    "label": "WARNING",
+    "language": "id",
+    "category": "safe tone",
+    "text": "Pilihan aman untuk mulai berinvestasi.",
+    "rationale": "Safety tone without risk details"
+  },
+  {
+    "id": "ID_WARN_009",
+    "label": "WARNING",
+    "language": "id",
+    "category": "minimum rate",
+    "text": "Suku bunga mulai dari 3% per tahun untuk pinjaman Anda.",
+    "rationale": "Minimum rate without eligibility condition"
+  },
+  {
+    "id": "ID_WARN_010",
+    "label": "WARNING",
+    "language": "id",
+    "category": "popular claim",
+    "text": "Produk investasi favorit nasabah tahun ini.",
+    "rationale": "Popularity claim without supporting basis"
+  },
+  {
+    "id": "ID_VIOL_001",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "guaranteed return",
+    "text": "Produk investasi ini pasti memberikan keuntungan 10% per tahun.",
+    "rationale": "Pasti memberikan keuntungan"
+  },
+  {
+    "id": "ID_VIOL_002",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "risk free",
+    "text": "Investasi bebas risiko dengan modal aman.",
+    "rationale": "Bebas risiko and modal aman"
+  },
+  {
+    "id": "ID_VIOL_003",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "principal safe",
+    "text": "Modal dijamin aman dan tidak akan rugi.",
+    "rationale": "Principal guarantee"
+  },
+  {
+    "id": "ID_VIOL_004",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "best claim",
+    "text": "Produk investasi nomor satu dengan imbal hasil tertinggi.",
+    "rationale": "Unsupported number one/highest claim"
+  },
+  {
+    "id": "ID_VIOL_005",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "guaranteed monthly profit",
+    "text": "Keuntungan bulanan dijamin tanpa risiko kerugian.",
+    "rationale": "Guaranteed profit and no risk"
+  },
+  {
+    "id": "ID_VIOL_006",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "baseless comparison",
+    "text": "Paling unggul dibanding semua produk bank lain.",
+    "rationale": "Baseless superlative comparison"
+  },
+  {
+    "id": "ID_VIOL_007",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "no loss",
+    "text": "Nasabah tidak mungkin mengalami kerugian dari produk ini.",
+    "rationale": "No-loss guarantee"
+  },
+  {
+    "id": "ID_VIOL_008",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "certain return",
+    "text": "Imbal hasil tetap 12% pasti diterima setiap tahun.",
+    "rationale": "Certain fixed return"
+  },
+  {
+    "id": "ID_VIOL_009",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "free risk",
+    "text": "Produk ini tanpa risiko dan cocok untuk semua nasabah.",
+    "rationale": "Without risk and universal suitability"
+  },
+  {
+    "id": "ID_VIOL_010",
+    "label": "VIOLATION",
+    "language": "id",
+    "category": "guaranteed high return",
+    "text": "Dapatkan keuntungan tinggi yang dijamin oleh bank.",
+    "rationale": "Guaranteed high return"
+  }
+]

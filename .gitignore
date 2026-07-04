@@ -1,0 +1,35 @@
+# 환경변수 (API 키 포함 — 절대 커밋 금지)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# DB
+*.db
+*.sqlite3
+
+# 벡터 인덱스 (대용량)
+data/faiss_index/
+*.index
+
+# 에디터
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 런타임 생성물 (자동 재생성)
+data/tree_backups/
+data/law_cache/
+outputs/
+
+# 편집 전 원본 백업 (커밋 불필요)
+data/test_ads/*.orig.pdf

@@ -1,0 +1,218 @@
+# ============================================================
+# 금융소비자보호법 제17조 — 적합성 원칙 의사결정 트리 DSL
+# Cross-Check AI | YAML DSL v1.0
+#
+# 선정 이유:
+#   제22조가 광고 표현 자체를 보는 조항이라면, 제17조는 금융상품 권유가
+#   소비자의 연령·재산상황·투자경험·위험감수능력에 적합한지 보는 조항이다.
+#   대고객 콘텐츠가 특정 고객군을 대상으로 가입·투자를 유도할 때 핵심 리스크가 된다.
+#
+# 위반/주의 유형 4가지:
+#   1. 무차별 권유        — 누구나/초보자도/전 고객 대상 고위험 상품 권유
+#   2. 취약고객 권유      — 고령자·은퇴자 등에게 위험상품 권유
+#   3. 고위험상품 부적합  — 파생/레버리지/ELS 등 고위험 상품을 안전 상품처럼 권유
+#   4. 심사·진단 생략     — 성향 확인 없이 즉시 가입·투자 유도
+# ============================================================
+
+meta:
+  law: 금융소비자보호법 제17조 (적합성 원칙)
+  article: 17
+  name: 적합성 원칙
+  effective_date: "2021-03-25"
+  version: "1.0-draft"
+  description: >
+    금융상품 권유 시 소비자의 연령, 재산상황, 투자경험, 위험감수능력,
+    금융상품 이해도 등을 고려하여 적합하지 않은 상품을 권유하지 않도록 검토한다.
+  legal_note: >
+    본 트리는 실제 적합성 판단을 자동 확정하기 위한 것이 아니라,
+    광고·권유 콘텐츠상 적합성 원칙 위반 가능성을 조기 탐지하는 보조 규칙이다.
+    최종 판단은 고객정보·판매채널·상품설명자료를 함께 확인해야 한다.
+  severity_weights:
+    VIOLATION: 1.0
+    WARNING: 0.6
+    PASS: 0.0
+  exclude_patterns:
+    - '투자성향\s*(확인|진단|분석)'
+    - '위험\s*등급\s*(확인|안내)'
+    - '적합성\s*(확인|진단)'
+    - '고객\s*정보\s*(확인|검토)'
+
+rules:
+
+  - id: finsumer_17_1_무차별권유
+    law: 금융소비자보호법 제17조
+    name: 무차별 고위험상품 권유 주의
+    description: "고객 특성 확인 없이 누구나 고위험 상품에 가입 가능하다고 표현하는 경우"
+    legal_basis:
+      primary:
+        - 금융소비자보호법 제17조
+      supplementary:
+        - 금융소비자보호법 시행령 제12조
+    nodes:
+      - id: route_17_high_risk_product
+        type: rule
+        check: "고위험 투자성 상품 맥락"
+        pattern: '(ELS|DLS|파생|레버리지|인버스|고위험|고수익|주식형\s*펀드|해외\s*파생|랩어카운트|투자신탁)'
+        flags: IGNORECASE
+        on_match:
+          result: PASS
+          reason: "고위험 투자성 상품 맥락 확인"
+          confidence: 0.0
+          _internal: true
+
+      - id: rule_17_1_a
+        type: rule
+        check: "무차별 대상 표현"
+        prerequisite: route_17_high_risk_product
+        pattern: '(누구나|전\s*고객|초보자도|처음이어도|경험\s*없어도|묻지도\s*따지지도\s*않고).{0,20}(가입|투자|신청|가능|추천)'
+        flags: IGNORECASE
+        on_match:
+          result: WARNING
+          reason: "고위험 상품을 고객 특성 확인 없이 무차별 권유하는 표현입니다."
+          confidence: 0.78
+          citation: "금융소비자보호법 제17조 및 동법 시행령 제12조"
+          action: "투자성향·투자경험·위험감수능력 확인 절차와 부적합 가능성을 명시하세요."
+
+      - id: llm_17_1
+        type: llm
+        model: llama-3.3-70b-versatile
+        check: "무차별 권유 문맥 판단"
+        trigger_when: rule_nodes_pass
+        prerequisite: route_17_high_risk_product
+        system_prompt: >
+          당신은 금융소비자보호법 전문 준법 심사관입니다.
+          광고 문구가 고객 특성 확인 없이 고위험 금융상품을 무차별 권유하는지 판단하세요.
+        prompt: |
+          다음 광고 문구를 분석하세요.
+
+          [문구]
+          {text}
+
+          판단 기준:
+          1. 고위험·투자성 상품을 누구에게나 적합한 것처럼 표현하는가?
+          2. 투자성향·투자경험·위험감수능력 확인이 필요하다는 안내가 없는가?
+          3. 실제 적합성 판단은 고객정보가 필요하므로, 텍스트만으로 확정하기 어려우면 WARNING으로 분류하세요.
+
+          반드시 아래 JSON 형식으로만 답하세요:
+          {{"triggered": true/false, "reason": "판단 근거 1~2문장 (반드시 '~합니다' 존댓말체로 작성)", "confidence": 0.0~1.0}}
+        on_match:
+          result: WARNING
+          reason: "고객 특성 확인 없는 무차별 권유 의심 (LLM 판단)"
+          confidence: 0.70
+          citation: "금융소비자보호법 제17조 및 동법 시행령 제12조"
+
+  - id: finsumer_17_2_취약고객권유
+    law: 금융소비자보호법 제17조
+    name: 취약고객 대상 고위험상품 권유 주의
+    description: "고령자·은퇴자 등 취약 가능 고객군에게 고위험 상품을 권유하는 경우"
+    legal_basis:
+      primary:
+        - 금융소비자보호법 제17조
+      supplementary:
+        - 금융소비자보호법 시행령 제12조
+    nodes:
+      - id: rule_17_2_a
+        type: rule
+        check: "취약고객군 + 고위험상품 결합"
+        pattern: '(고령자|어르신|은퇴자|퇴직자|노후자금|생활자금|주부|사회초년생).{0,35}(ELS|DLS|파생|레버리지|고위험|고수익|주식형\s*펀드|투자)'
+        flags: IGNORECASE
+        on_match:
+          result: WARNING
+          reason: "취약 가능 고객군에게 고위험 금융상품을 권유하는 표현입니다."
+          confidence: 0.80
+          citation: "금융소비자보호법 제17조 및 동법 시행령 제12조"
+          action: "대상 고객 적합성, 위험등급, 손실 가능성, 가입 제한 여부를 명확히 안내하세요."
+
+      - id: rule_17_2_b
+        type: rule
+        check: "노후자금 안정 운용 오인 표현"
+        pattern: '(노후|은퇴|퇴직금|생활자금).{0,25}(안전하게|든든하게|걱정\s*없이|고수익|수익\s*보장)'
+        flags: IGNORECASE
+        on_match:
+          result: WARNING
+          reason: "노후·생활자금 목적 고객에게 안전성 또는 고수익을 과도하게 암시할 수 있습니다."
+          confidence: 0.76
+          citation: "금융소비자보호법 제17조 및 동법 시행령 제12조"
+          action: "상품 위험등급과 원금손실 가능성, 적합성 확인 필요성을 함께 표시하세요."
+
+  - id: finsumer_17_3_고위험안전오인
+    law: 금융소비자보호법 제17조
+    name: 고위험상품 안전 오인 권유 금지
+    description: "고위험 투자성 상품을 예금·안전 상품처럼 표현하는 경우"
+    legal_basis:
+      primary:
+        - 금융소비자보호법 제17조
+      supplementary:
+        - 금융소비자보호법 제21조
+        - 금융소비자보호법 제22조
+    nodes:
+      - id: rule_17_3_a
+        type: rule
+        check: "고위험상품 + 안전성 표현"
+        pattern: '(ELS|DLS|파생|레버리지|고위험|주식형\s*펀드).{0,30}(안전|예금처럼|원금\s*걱정\s*없|손실\s*걱정\s*없|든든)'
+        flags: IGNORECASE
+        on_match:
+          result: VIOLATION
+          reason: "고위험 상품을 안전 상품처럼 오인시킬 수 있는 권유 표현입니다."
+          confidence: 0.88
+          citation: "금융소비자보호법 제17조 및 제21조"
+          action: "안전성 암시 표현을 삭제하고 위험등급·손실 가능성을 명시하세요."
+
+      - id: rule_17_3_b
+        type: rule
+        check: "안전성 표현 + 고위험상품 역방향"
+        pattern: '(안전|예금처럼|원금\s*걱정\s*없|손실\s*걱정\s*없|든든).{0,30}(ELS|DLS|파생|레버리지|고위험|주식형\s*펀드)'
+        flags: IGNORECASE
+        on_match:
+          result: VIOLATION
+          reason: "안전성 표현과 고위험 상품명이 결합되어 소비자 오인 가능성이 큽니다."
+          confidence: 0.88
+          citation: "금융소비자보호법 제17조 및 제21조"
+          action: "안전성 표현을 삭제하고 적합성 확인 및 위험고지 문구를 추가하세요."
+
+  - id: finsumer_17_4_성향진단생략
+    law: 금융소비자보호법 제17조
+    name: 적합성 확인 생략 암시 주의
+    description: "투자성 상품에서 성향 진단·고객정보 확인 없이 즉시 가입을 유도하는 경우"
+    legal_basis:
+      primary:
+        - 금융소비자보호법 제17조
+      supplementary:
+        - 금융소비자보호법 시행령 제12조
+    nodes:
+      - id: route_17_investment_context
+        type: rule
+        check: "투자성 상품 맥락"
+        pattern: '(투자|펀드|ELS|DLS|파생|주식|채권|리츠|투자신탁|랩어카운트)'
+        flags: IGNORECASE
+        on_match:
+          result: PASS
+          reason: "투자성 상품 맥락 확인"
+          confidence: 0.0
+          _internal: true
+
+      - id: rule_17_4_a
+        type: rule
+        check: "성향 확인 없는 즉시 가입 유도"
+        prerequisite: route_17_investment_context
+        pattern: '(바로|즉시|간편하게|1분\s*만에|심사\s*없이|절차\s*없이).{0,20}(가입|투자|신청|시작)'
+        flags: IGNORECASE
+        on_match:
+          result: WARNING
+          reason: "투자성 상품에서 적합성 확인 없이 즉시 가입을 유도하는 표현입니다."
+          confidence: 0.72
+          citation: "금융소비자보호법 제17조 및 동법 시행령 제12조"
+          action: "투자성향 확인, 위험등급 확인, 부적합 시 가입 제한 가능성을 안내하세요."
+
+      - id: rule_17_4_b
+        type: rule
+        check: "특정 투자자군에 대한 적합 추천 근거 부족 주의"
+        prerequisite: route_17_investment_context
+        pattern: '(초보\s*투자자|처음\s*투자|투자\s*초보|사회초년생).{0,25}(가장\s*적합|적합|추천|맞춤)|추천.{0,20}(투자\s*상품|상품)'
+        flags: IGNORECASE
+        on_match:
+          result: WARNING
+          reason: "특정 고객군에게 적합하다고 추천하려면 투자성향·경험·위험감수능력 확인 근거가 필요합니다."
+          confidence: 0.66
+          citation: "금융소비자보호법 제17조 및 동법 시행령 제12조"
+          action: "적합성 확인 절차, 위험등급, 부적합 가능성, 추천 근거를 함께 확인"

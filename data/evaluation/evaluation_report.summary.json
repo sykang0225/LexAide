@@ -1,0 +1,94 @@
+{
+  "overall": {
+    "total": 105,
+    "exact_accuracy": 0.8,
+    "risk_precision": 0.9210526315789473,
+    "risk_recall": 1.0,
+    "risk_fpr": 0.17142857142857143,
+    "violation_recall_not_pass": 1.0,
+    "tp": 70,
+    "fp": 6,
+    "fn": 0,
+    "tn": 29,
+    "confusion": {
+      "PASS->PASS": 29,
+      "PASS->WARNING": 2,
+      "PASS->VIOLATION": 4,
+      "WARNING->PASS": 0,
+      "WARNING->WARNING": 20,
+      "WARNING->VIOLATION": 15,
+      "VIOLATION->PASS": 0,
+      "VIOLATION->WARNING": 0,
+      "VIOLATION->VIOLATION": 35
+    }
+  },
+  "ko": {
+    "total": 60,
+    "exact_accuracy": 0.9,
+    "risk_precision": 0.9302325581395349,
+    "risk_recall": 1.0,
+    "risk_fpr": 0.15,
+    "violation_recall_not_pass": 1.0,
+    "tp": 40,
+    "fp": 3,
+    "fn": 0,
+    "tn": 17,
+    "confusion": {
+      "PASS->PASS": 17,
+      "PASS->WARNING": 2,
+      "PASS->VIOLATION": 1,
+      "WARNING->PASS": 0,
+      "WARNING->WARNING": 17,
+      "WARNING->VIOLATION": 3,
+      "VIOLATION->PASS": 0,
+      "VIOLATION->WARNING": 0,
+      "VIOLATION->VIOLATION": 20
+    }
+  },
+  "ko_17": {
+    "total": 15,
+    "exact_accuracy": 0.7333333333333333,
+    "risk_precision": 0.9090909090909091,
+    "risk_recall": 1.0,
+    "risk_fpr": 0.2,
+    "violation_recall_not_pass": 1.0,
+    "tp": 10,
+    "fp": 1,
+    "fn": 0,
+    "tn": 4,
+    "confusion": {
+      "PASS->PASS": 4,
+      "PASS->WARNING": 0,
+      "PASS->VIOLATION": 1,
+      "WARNING->PASS": 0,
+      "WARNING->WARNING": 2,
+      "WARNING->VIOLATION": 3,
+      "VIOLATION->PASS": 0,
+      "VIOLATION->WARNING": 0,
+      "VIOLATION->VIOLATION": 5
+    }
+  },
+  "ojk": {
+    "total": 30,
+    "exact_accuracy": 0.6333333333333333,
+    "risk_precision": 0.9090909090909091,
+    "risk_recall": 1.0,
+    "risk_fpr": 0.2,
+    "violation_recall_not_pass": 1.0,
+    "tp": 20,
+    "fp": 2,
+    "fn": 0,
+    "tn": 8,
+    "confusion": {
+      "PASS->PASS": 8,
+      "PASS->WARNING": 0,
+      "PASS->VIOLATION": 2,
+      "WARNING->PASS": 0,
+      "WARNING->WARNING": 1,
+      "WARNING->VIOLATION": 9,
+      "VIOLATION->PASS": 0,
+      "VIOLATION->WARNING": 0,
+      "VIOLATION->VIOLATION": 10
+    }
+  }
+}

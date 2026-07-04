@@ -1,0 +1,122 @@
+[
+  {
+    "id": "KO17_PASS_001",
+    "label": "PASS",
+    "language": "ko",
+    "category": "적합성 확인 안내",
+    "text": "본 상품 가입 전 투자성향 확인과 위험등급 설명이 진행되며, 부적합한 경우 가입이 제한될 수 있습니다.",
+    "rationale": "적합성 확인 절차와 가입 제한 가능성을 명시"
+  },
+  {
+    "id": "KO17_PASS_002",
+    "label": "PASS",
+    "language": "ko",
+    "category": "위험등급 고지",
+    "text": "이 펀드는 투자성향과 투자경험, 위험감수능력을 확인한 후 가입 가능 여부가 결정됩니다.",
+    "rationale": "고객 특성 확인 후 가입 가능 여부 결정"
+  },
+  {
+    "id": "KO17_PASS_003",
+    "label": "PASS",
+    "language": "ko",
+    "category": "고위험상품 고지",
+    "text": "ELS는 원금손실 가능성이 있는 고위험 상품이며, 투자성향에 따라 가입이 제한될 수 있습니다.",
+    "rationale": "고위험성과 적합성 제한 고지"
+  },
+  {
+    "id": "KO17_PASS_004",
+    "label": "PASS",
+    "language": "ko",
+    "category": "대출 일반",
+    "text": "대출 가능 여부는 소득, 신용도, 내부 심사 기준에 따라 달라질 수 있습니다.",
+    "rationale": "투자성 상품 또는 적합성 원칙 위험 문구 아님"
+  },
+  {
+    "id": "KO17_PASS_005",
+    "label": "PASS",
+    "language": "ko",
+    "category": "성향 진단",
+    "text": "투자 전 고객님의 투자목적, 재산상황, 투자경험을 확인한 뒤 적합한 상품을 안내합니다.",
+    "rationale": "적합성 원칙 준수 문구"
+  },
+  {
+    "id": "KO17_WARNING_001",
+    "label": "WARNING",
+    "language": "ko",
+    "category": "무차별 권유",
+    "text": "초보자도 바로 가입 가능한 ELS 투자 상품입니다.",
+    "rationale": "고위험 상품을 초보자에게 즉시 가입 가능하다고 표현"
+  },
+  {
+    "id": "KO17_WARNING_002",
+    "label": "WARNING",
+    "language": "ko",
+    "category": "성향 확인 생략",
+    "text": "투자 경험이 없어도 1분 만에 바로 시작할 수 있는 파생상품입니다.",
+    "rationale": "투자성향 확인 없는 즉시 투자 유도"
+  },
+  {
+    "id": "KO17_WARNING_003",
+    "label": "WARNING",
+    "language": "ko",
+    "category": "취약고객 권유",
+    "text": "은퇴자 노후자금을 위한 고수익 ELS 투자 기회를 안내드립니다.",
+    "rationale": "은퇴자·노후자금과 고위험 투자상품 결합"
+  },
+  {
+    "id": "KO17_WARNING_004",
+    "label": "WARNING",
+    "language": "ko",
+    "category": "무차별 권유",
+    "text": "전 고객 누구나 신청 가능한 레버리지 투자 상품입니다.",
+    "rationale": "고위험 상품을 전 고객 대상으로 권유"
+  },
+  {
+    "id": "KO17_WARNING_005",
+    "label": "WARNING",
+    "language": "ko",
+    "category": "노후자금 오인",
+    "text": "퇴직금을 든든하게 운용할 수 있는 고수익 투자 상품입니다.",
+    "rationale": "노후자금 목적 고객에게 고수익·안전성을 암시"
+  },
+  {
+    "id": "KO17_VIOL_001",
+    "label": "VIOLATION",
+    "language": "ko",
+    "category": "고위험 안전 오인",
+    "text": "ELS를 예금처럼 안전하게 운용할 수 있습니다.",
+    "rationale": "고위험 투자성 상품을 예금처럼 안전하다고 표현"
+  },
+  {
+    "id": "KO17_VIOL_002",
+    "label": "VIOLATION",
+    "language": "ko",
+    "category": "고위험 안전 오인",
+    "text": "레버리지 상품도 원금 걱정 없이 든든하게 투자할 수 있습니다.",
+    "rationale": "레버리지 상품의 원금손실 가능성을 부정"
+  },
+  {
+    "id": "KO17_VIOL_003",
+    "label": "VIOLATION",
+    "language": "ko",
+    "category": "고위험 안전 오인",
+    "text": "파생상품이지만 손실 걱정 없는 안전한 투자입니다.",
+    "rationale": "파생상품을 손실 걱정 없는 투자로 표현"
+  },
+  {
+    "id": "KO17_VIOL_004",
+    "label": "VIOLATION",
+    "language": "ko",
+    "category": "고위험 안전 오인",
+    "text": "주식형 펀드를 예금처럼 안정적으로 가입하세요.",
+    "rationale": "주식형 펀드를 예금처럼 오인시킬 수 있음"
+  },
+  {
+    "id": "KO17_VIOL_005",
+    "label": "VIOLATION",
+    "language": "ko",
+    "category": "고위험 안전 오인",
+    "text": "고위험 상품이지만 원금 걱정 없는 든든한 투자입니다.",
+    "rationale": "고위험 상품과 원금 안전 암시가 결합"
+  }
+]

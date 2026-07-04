@@ -1,0 +1,422 @@
+[
+  {
+    "id": "KO_PASS_001",
+    "label": "PASS",
+    "category": "대출 조건 고지",
+    "text": "대출금리는 연 3.45%~8.90%이며 개인신용평가 결과에 따라 차등 적용됩니다. 계약 체결 전 상품설명서와 약관을 확인하시기 바랍니다.",
+    "rationale": "금리 범위, 차등 적용, 약관 확인 문구가 포함된 정상 고지"
+  },
+  {
+    "id": "KO_PASS_002",
+    "label": "PASS",
+    "category": "투자 위험 고지",
+    "text": "본 금융투자상품은 운용 결과에 따라 원금손실이 발생할 수 있으며, 과거 수익률이 미래 수익률을 보장하지 않습니다.",
+    "rationale": "원금손실 가능성과 수익률 비보장 명시"
+  },
+  {
+    "id": "KO_PASS_003",
+    "label": "PASS",
+    "category": "수수료 고지",
+    "text": "펀드 가입 시 판매보수와 운용보수가 발생하며, 자세한 비용은 투자설명서에서 확인할 수 있습니다.",
+    "rationale": "비용 발생 사실과 설명서 확인 안내"
+  },
+  {
+    "id": "KO_PASS_004",
+    "label": "PASS",
+    "category": "예금 일반 안내",
+    "text": "예금금리는 가입일 현재 영업점 및 모바일뱅킹에 고시된 금리를 적용하며, 세금 공제 후 실제 수령액은 달라질 수 있습니다.",
+    "rationale": "확정 수익 보장 표현 없이 조건 안내"
+  },
+  {
+    "id": "KO_PASS_005",
+    "label": "PASS",
+    "category": "대출 심사 안내",
+    "text": "대출 가능 여부와 한도는 개인신용평가 및 내부 심사 기준에 따라 달라질 수 있습니다.",
+    "rationale": "최대한도 단정 없이 심사 기준 고지"
+  },
+  {
+    "id": "KO_PASS_006",
+    "label": "PASS",
+    "category": "중도상환 비용",
+    "text": "중도상환해약금은 최대 1.0%이며, 대출기간과 상환 시점에 따라 달라질 수 있습니다.",
+    "rationale": "소비자 부담 비용 고지"
+  },
+  {
+    "id": "KO_PASS_007",
+    "label": "PASS",
+    "category": "상품설명서 안내",
+    "text": "금융소비자는 금융소비자보호법에 따라 상품 또는 서비스에 대해 설명을 받을 권리가 있습니다.",
+    "rationale": "권리 고지 문구"
+  },
+  {
+    "id": "KO_PASS_008",
+    "label": "PASS",
+    "category": "카드 혜택 조건",
+    "text": "카드 할인 혜택은 전월 이용실적 및 가맹점 업종 기준에 따라 적용 여부가 달라질 수 있습니다.",
+    "rationale": "혜택 조건 안내"
+  },
+  {
+    "id": "KO_PASS_009",
+    "label": "PASS",
+    "category": "원금 비보장",
+    "text": "이 상품은 원금이 보장되지 않으며 시장 상황에 따라 손실이 발생할 수 있습니다.",
+    "rationale": "부정문/위험 고지로 원금보장 오탐 방지 대상"
+  },
+  {
+    "id": "KO_PASS_010",
+    "label": "PASS",
+    "category": "한도 조건",
+    "text": "최대한도 3억원은 심사 결과와 소득 수준에 따라 차등 적용되며 모든 고객에게 동일하게 적용되지 않습니다.",
+    "rationale": "최대한도 적용 조건 고지"
+  },
+  {
+    "id": "KO_PASS_011",
+    "label": "PASS",
+    "category": "금리 조건",
+    "text": "최저 연 3.5% 금리는 우대조건 충족 시 적용될 수 있으며 실제 금리는 심사 결과에 따라 달라집니다.",
+    "rationale": "최저금리 조건과 심사 결과 고지"
+  },
+  {
+    "id": "KO_PASS_012",
+    "label": "PASS",
+    "category": "투자설명서",
+    "text": "투자 전 투자설명서를 반드시 확인하시고 투자 위험, 수수료, 환매 제한 사항을 충분히 이해하시기 바랍니다.",
+    "rationale": "주요 위험과 비용 확인 안내"
+  },
+  {
+    "id": "KO_PASS_013",
+    "label": "PASS",
+    "category": "변동금리",
+    "text": "본 대출은 변동금리 상품으로 시장금리 변동에 따라 이자 부담이 증가할 수 있습니다.",
+    "rationale": "금리 변동 위험 고지"
+  },
+  {
+    "id": "KO_PASS_014",
+    "label": "PASS",
+    "category": "보험 일반 안내",
+    "text": "보험계약 체결 전 상품설명서와 약관을 확인하시고 보장 내용과 면책 사항을 확인하시기 바랍니다.",
+    "rationale": "보험 상품 고지"
+  },
+  {
+    "id": "KO_PASS_015",
+    "label": "PASS",
+    "category": "비대면 신청",
+    "text": "비대면 신청은 본인인증 및 심사 완료 후 가능하며 심사 결과에 따라 이용이 제한될 수 있습니다.",
+    "rationale": "신청 가능성 조건부 표현"
+  },
+  {
+    "id": "KO_PASS_016",
+    "label": "PASS",
+    "category": "수익 추구",
+    "text": "안정적인 현금흐름을 추구하는 포트폴리오로 운용되며 운용 성과는 시장 상황에 따라 변동될 수 있습니다.",
+    "rationale": "추구 표현과 성과 변동 고지"
+  },
+  {
+    "id": "KO_PASS_017",
+    "label": "PASS",
+    "category": "NICE 기준",
+    "text": "신용점수 NICE 600점 이상 고객을 대상으로 하며, 내부 심사 결과에 따라 대출이 거절될 수 있습니다.",
+    "rationale": "OCR 보정 대상 표현 포함 정상 문구"
+  },
+  {
+    "id": "KO_PASS_018",
+    "label": "PASS",
+    "category": "인지세",
+    "text": "대출금액 5천만원 초과 시 인지세가 발생하며 고객과 은행이 각 50%씩 부담합니다.",
+    "rationale": "비용 고지"
+  },
+  {
+    "id": "KO_PASS_019",
+    "label": "PASS",
+    "category": "연체이자",
+    "text": "연체이자율은 약정이율에 3%를 더하여 적용되며 법정 최고금리를 초과하지 않습니다.",
+    "rationale": "불리한 조건 고지"
+  },
+  {
+    "id": "KO_PASS_020",
+    "label": "PASS",
+    "category": "비교 없음",
+    "text": "고객의 금융 생활에 필요한 서비스를 모바일 앱에서 편리하게 확인할 수 있습니다.",
+    "rationale": "비교·보장·단정 표현 없음"
+  },
+  {
+    "id": "KO_WARN_001",
+    "label": "WARNING",
+    "category": "최저금리 조건 부족",
+    "text": "직장인이라면 누구나 최저 연 3.45%로 간편하게 대출 신청하세요.",
+    "rationale": "최저금리 적용 조건과 심사 기준이 부족해 오인 가능"
+  },
+  {
+    "id": "KO_WARN_002",
+    "label": "WARNING",
+    "category": "최대한도 강조",
+    "text": "모바일로 빠르게 신청하고 최대 3억원까지 한도 조회하세요.",
+    "rationale": "최대한도 적용 범위와 심사 기준 설명 부족"
+  },
+  {
+    "id": "KO_WARN_003",
+    "label": "WARNING",
+    "category": "안정 수익 암시",
+    "text": "시장 상황에 흔들리지 않는 안정적인 수익을 기대할 수 있는 상품입니다.",
+    "rationale": "보장은 아니지만 안정 수익 암시"
+  },
+  {
+    "id": "KO_WARN_004",
+    "label": "WARNING",
+    "category": "검증된 상품 표현",
+    "text": "수많은 고객이 선택한 검증된 투자 상품으로 안정적인 성과를 추구합니다.",
+    "rationale": "객관 근거 없는 검증 표현 가능성"
+  },
+  {
+    "id": "KO_WARN_005",
+    "label": "WARNING",
+    "category": "혜택 강조 조건 부족",
+    "text": "지금 가입하면 높은 우대금리 혜택을 받을 수 있습니다.",
+    "rationale": "우대금리 조건 미기재"
+  },
+  {
+    "id": "KO_WARN_006",
+    "label": "WARNING",
+    "category": "현저성 검토",
+    "text": "최저 연 3.45% 금리를 크게 표시하고 비용과 조건은 하단 주석으로만 안내합니다.",
+    "rationale": "레이아웃 현저성은 Human-in-the-loop 검토 대상"
+  },
+  {
+    "id": "KO_WARN_007",
+    "label": "WARNING",
+    "category": "부담 없는 표현",
+    "text": "부담 없이 시작하는 투자, 안정적인 자산관리를 경험하세요.",
+    "rationale": "위험 축소 인상 가능"
+  },
+  {
+    "id": "KO_WARN_008",
+    "label": "WARNING",
+    "category": "빠른 심사 강조",
+    "text": "최대 1시간 이내 빠른 심사로 필요한 자금을 바로 확인하세요.",
+    "rationale": "심사 조건과 예외 설명 부족"
+  },
+  {
+    "id": "KO_WARN_009",
+    "label": "WARNING",
+    "category": "수익률 강조 비용 부족",
+    "text": "연 7% 수준의 목표 수익률을 추구하는 상품입니다.",
+    "rationale": "수익률 강조 대비 비용·위험 설명 부족"
+  },
+  {
+    "id": "KO_WARN_010",
+    "label": "WARNING",
+    "category": "비교 암시",
+    "text": "일반 예금보다 더 나은 자산관리 대안을 만나보세요.",
+    "rationale": "비교 근거 부족 가능"
+  },
+  {
+    "id": "KO_WARN_011",
+    "label": "WARNING",
+    "category": "고객 선택 표현",
+    "text": "많은 고객이 선택한 인기 상품으로 편리하게 자산을 관리하세요.",
+    "rationale": "인기·선택 근거 불명확"
+  },
+  {
+    "id": "KO_WARN_012",
+    "label": "WARNING",
+    "category": "우대조건 부족",
+    "text": "조건만 맞으면 누구나 우대금리를 받을 수 있습니다.",
+    "rationale": "우대조건 구체성 부족"
+  },
+  {
+    "id": "KO_WARN_013",
+    "label": "WARNING",
+    "category": "낮은 부담 강조",
+    "text": "매월 부담을 낮춘 합리적인 대출 상품입니다.",
+    "rationale": "소비자 부담 정보가 부족할 수 있음"
+  },
+  {
+    "id": "KO_WARN_014",
+    "label": "WARNING",
+    "category": "성과 기대",
+    "text": "전문가가 엄선한 포트폴리오로 꾸준한 성과를 기대할 수 있습니다.",
+    "rationale": "성과 기대와 전문가 표현 근거 검토 필요"
+  },
+  {
+    "id": "KO_WARN_015",
+    "label": "WARNING",
+    "category": "한정성 권유",
+    "text": "이번 달 특별 혜택으로 더 좋은 조건을 확인해보세요.",
+    "rationale": "특별 혜택 조건과 기간 구체성 부족"
+  },
+  {
+    "id": "KO_WARN_016",
+    "label": "WARNING",
+    "category": "시장 평균 비교",
+    "text": "시장 평균 대비 경쟁력 있는 금리를 제공합니다.",
+    "rationale": "비교 기준과 조사 기준일 미기재"
+  },
+  {
+    "id": "KO_WARN_017",
+    "label": "WARNING",
+    "category": "비용 일부 누락",
+    "text": "연 5% 목표 수익을 추구하며 가입 절차가 간편합니다.",
+    "rationale": "수익률 강조에 비용·위험 설명 부족"
+  },
+  {
+    "id": "KO_WARN_018",
+    "label": "WARNING",
+    "category": "대상 조건 부족",
+    "text": "직장인 누구나 가능한 간편 대출, 지금 한도를 확인하세요.",
+    "rationale": "누구나 가능 표현과 심사 조건 부족"
+  },
+  {
+    "id": "KO_WARN_019",
+    "label": "WARNING",
+    "category": "대표 금리 오인",
+    "text": "연 3.45% 금리로 필요한 생활자금을 빠르게 준비하세요.",
+    "rationale": "최저금리인지 대표금리인지 조건 불명확"
+  },
+  {
+    "id": "KO_WARN_020",
+    "label": "WARNING",
+    "category": "근거 없는 추천",
+    "text": "초보 투자자에게 가장 적합한 상품으로 추천드립니다.",
+    "rationale": "적합성 판단 근거 부족"
+  },
+  {
+    "id": "KO_VIOL_001",
+    "label": "VIOLATION",
+    "category": "수익 보장",
+    "text": "연 8% 수익을 보장합니다.",
+    "rationale": "확정 수익 보장 표현"
+  },
+  {
+    "id": "KO_VIOL_002",
+    "label": "VIOLATION",
+    "category": "원금 보장",
+    "text": "원금은 100% 안전하게 보장되는 투자 상품입니다.",
+    "rationale": "원금 보장 직접 표현"
+  },
+  {
+    "id": "KO_VIOL_003",
+    "label": "VIOLATION",
+    "category": "손실 없음",
+    "text": "손실 없이 안정적으로 자산을 늘릴 수 있는 펀드입니다.",
+    "rationale": "투자상품 손실 없음 표현"
+  },
+  {
+    "id": "KO_VIOL_004",
+    "label": "VIOLATION",
+    "category": "확정 수익",
+    "text": "매월 확정 이자를 지급 보장하는 고수익 상품입니다.",
+    "rationale": "이자 지급 보장"
+  },
+  {
+    "id": "KO_VIOL_005",
+    "label": "VIOLATION",
+    "category": "무조건 수익",
+    "text": "무조건 수익이 나는 안전한 투자 기회입니다.",
+    "rationale": "무조건 수익 단정"
+  },
+  {
+    "id": "KO_VIOL_006",
+    "label": "VIOLATION",
+    "category": "업계 최고",
+    "text": "업계 최고 금리 상품, 지금 바로 가입하세요.",
+    "rationale": "근거 없는 최상급 표현"
+  },
+  {
+    "id": "KO_VIOL_007",
+    "label": "VIOLATION",
+    "category": "No.1",
+    "text": "No.1 예금 상품으로 가장 높은 이자를 제공합니다.",
+    "rationale": "근거 없는 1위/최고 표현"
+  },
+  {
+    "id": "KO_VIOL_008",
+    "label": "VIOLATION",
+    "category": "타사 비교",
+    "text": "타사 상품보다 높은 수익률을 제공하는 특별 상품입니다.",
+    "rationale": "비교 근거 없는 우위 표현"
+  },
+  {
+    "id": "KO_VIOL_009",
+    "label": "VIOLATION",
+    "category": "투자 손실 미고지",
+    "text": "ETF 투자로 연 10% 목표 수익을 추구하세요.",
+    "rationale": "투자상품인데 원금손실 가능성 고지 없음"
+  },
+  {
+    "id": "KO_VIOL_010",
+    "label": "VIOLATION",
+    "category": "비용 미고지",
+    "text": "연 10% 예상 수익률을 제시하는 펀드 상품입니다.",
+    "rationale": "수익률 강조 대비 비용·위험 정보 미흡"
+  },
+  {
+    "id": "KO_VIOL_011",
+    "label": "VIOLATION",
+    "category": "원금 걱정 없음",
+    "text": "원금 걱정 없는 안전한 펀드로 노후를 준비하세요.",
+    "rationale": "원금 손실 불가 암시"
+  },
+  {
+    "id": "KO_VIOL_012",
+    "label": "VIOLATION",
+    "category": "반드시 상승",
+    "text": "전문가가 추천하는 종목으로 반드시 수익을 얻을 수 있습니다.",
+    "rationale": "부당권유 단정적 판단"
+  },
+  {
+    "id": "KO_VIOL_013",
+    "label": "VIOLATION",
+    "category": "100% 성공",
+    "text": "100% 성공하는 투자 전략으로 누구나 돈을 벌 수 있습니다.",
+    "rationale": "거짓·과장 권유"
+  },
+  {
+    "id": "KO_VIOL_014",
+    "label": "VIOLATION",
+    "category": "손실 보전",
+    "text": "투자 손실이 나도 원금을 지켜드리는 상품입니다.",
+    "rationale": "손실보전/원금 보장 암시"
+  },
+  {
+    "id": "KO_VIOL_015",
+    "label": "VIOLATION",
+    "category": "최저 수수료",
+    "text": "국내 최저 수수료로 만나는 최고의 투자 서비스입니다.",
+    "rationale": "객관 근거 없는 최상급 표현"
+  },
+  {
+    "id": "KO_VIOL_016",
+    "label": "VIOLATION",
+    "category": "경쟁사 대비",
+    "text": "경쟁사 대비 우수한 수익률을 제공하는 투자 상품입니다.",
+    "rationale": "비교 근거 부족"
+  },
+  {
+    "id": "KO_VIOL_017",
+    "label": "VIOLATION",
+    "category": "절대 손실 없음",
+    "text": "절대 손실 없는 고수익 투자 상품입니다.",
+    "rationale": "손실 가능성 부정"
+  },
+  {
+    "id": "KO_VIOL_018",
+    "label": "VIOLATION",
+    "category": "수익 지급 보장",
+    "text": "배당 수익을 매월 지급 보장합니다.",
+    "rationale": "배당 수익 보장"
+  },
+  {
+    "id": "KO_VIOL_019",
+    "label": "VIOLATION",
+    "category": "국내 최고",
+    "text": "국내 최고 수익률을 자랑하는 펀드에 가입하세요.",
+    "rationale": "근거 없는 최상급 수익률"
+  },
+  {
+    "id": "KO_VIOL_020",
+    "label": "VIOLATION",
+    "category": "마감 압박",
+    "text": "오늘 마감되는 마지막 기회입니다. 지금 바로 투자하지 않으면 후회합니다.",
+    "rationale": "불안감·긴박감 조성 권유"
+  }
+]

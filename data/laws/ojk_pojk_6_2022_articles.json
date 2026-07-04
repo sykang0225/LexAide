@@ -1,0 +1,49 @@
+{
+  "source": "OJK official PDF",
+  "source_url": "https://www.ojk.go.id/id/regulasi/Documents/Pages/Perlindungan-Konsumen-dan-Masyarakat-di-Sektor-Jasa-Keuangan/POJK%206%20-%2007%20-%202022.pdf",
+  "law_id": "POJK No. 6/POJK.07/2022",
+  "official_name": "Peraturan Otoritas Jasa Keuangan Nomor 6/POJK.07/2022 tentang Perlindungan Konsumen dan Masyarakat di Sektor Jasa Keuangan",
+  "audit_note": "Core local article map for MVP citation verification. Full article text should be expanded in final legal review.",
+  "articles": {
+    "16": {
+      "title": "Informasi produk dan/atau layanan",
+      "summary_ko": "PUJK는 소비자에게 제공하는 상품·서비스 정보를 명확하고 정확하며 진실되고 쉽게 접근 가능하며 오인을 유발하지 않도록 제공해야 한다.",
+      "recommended_use": "광고·마케팅 정보의 정확성, 진실성, 명확성, 오인 가능성 판단"
+    },
+    "17": {
+      "title": "Ringkasan informasi produk dan/atau layanan",
+      "summary_ko": "상품·서비스 요약 정보에는 혜택, 위험, 요건·절차, 비용 및 관련 추가 정보가 포함되어야 한다.",
+      "recommended_use": "위험·비용·조건 미고지 판단"
+    },
+    "18": {
+      "title": "Penyampaian informasi pada pemasaran dan sebelum kontrak",
+      "summary_ko": "PUJK는 마케팅 과정 및 계약 체결 전에 필요한 상품·서비스 정보를 제공해야 한다.",
+      "recommended_use": "광고·권유 단계의 정보제공 의무 판단"
+    },
+    "19": {
+      "title": "Penyampaian ringkasan informasi sebelum keputusan konsumen",
+      "summary_ko": "소비자의 의사결정 또는 계약 체결 전 상품·서비스 요약 정보를 제공해야 한다.",
+      "recommended_use": "계약 전 핵심 정보 제공 여부 판단"
+    },
+    "21": {
+      "title": "Identitas PUJK dalam penawaran, promosi, dan iklan",
+      "summary_ko": "상품·서비스의 제안, 프로모션, 광고에는 PUJK의 명칭·로고 및 OJK 인허가·감독 관련 표시가 포함되어야 한다.",
+      "recommended_use": "OJK 광고 표시 의무 및 금융회사 식별 정보 확인"
+    },
+    "22": {
+      "title": "Larangan penyalahgunaan keadaan konsumen",
+      "summary_ko": "PUJK는 다른 선택이 없는 소비자 상황을 악용하여 소비자에게 손해를 주거나 손해 가능성이 있는 상품·서비스를 제공해서는 안 된다.",
+      "recommended_use": "소비자 취약 상황 악용·부당 권유 판단"
+    },
+    "28": {
+      "title": "Penyalahgunaan keadaan dalam perjanjian",
+      "summary_ko": "상품·서비스 계약 작성 과정에서 소비자의 특정 상황을 악용해서는 안 된다.",
+      "recommended_use": "계약 조항·계약 체결 과정 검토"
+    },
+    "29": {
+      "title": "Konfirmasi pemahaman konsumen atas klausula perjanjian",
+      "summary_ko": "PUJK는 계약 체결 전 소비자가 계약 조항을 이해했는지 확인해야 한다.",
+      "recommended_use": "계약 조항 이해 확인 및 설명의무 보조 검토"
+    }
+  }
+}

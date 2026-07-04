@@ -1,0 +1,16 @@
+{
+  "cases": 60,
+  "groq": {
+    "exact_accuracy": 0.9,
+    "risk_recall_warning_or_violation": 1.0,
+    "violation_recall_not_pass": 1.0,
+    "pass_specificity": 0.85
+  },
+  "claude": {
+    "exact_accuracy": 0.9,
+    "risk_recall_warning_or_violation": 1.0,
+    "violation_recall_not_pass": 1.0,
+    "pass_specificity": 0.85
+  },
+  "disagreements": []
+}

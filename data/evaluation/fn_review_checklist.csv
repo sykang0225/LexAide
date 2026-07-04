@@ -1,0 +1,9 @@
+﻿id,suite,language,category,expected,predicted,text,why_expected_risk,review_question,user_decision,recommended_fix,final_action
+KO_WARN_008,ko,ko,빠른 심사 강조,WARNING,PASS,최대 1시간 이내 빠른 심사로 필요한 자금을 바로 확인하세요.,심사 조건과 예외 설명 부족,"이 문구를 준법관리자 검토 대상(WARNING 이상)으로 올릴지, PASS로 둘지 판단",미검수,,
+KO_WARN_011,ko,ko,고객 선택 표현,WARNING,PASS,많은 고객이 선택한 인기 상품으로 편리하게 자산을 관리하세요.,인기·선택 근거 불명확,"이 문구를 준법관리자 검토 대상(WARNING 이상)으로 올릴지, PASS로 둘지 판단",미검수,,
+KO_WARN_013,ko,ko,낮은 부담 강조,WARNING,PASS,매월 부담을 낮춘 합리적인 대출 상품입니다.,소비자 부담 정보가 부족할 수 있음,"이 문구를 준법관리자 검토 대상(WARNING 이상)으로 올릴지, PASS로 둘지 판단",미검수,,
+KO_WARN_015,ko,ko,한정성 권유,WARNING,PASS,이번 달 특별 혜택으로 더 좋은 조건을 확인해보세요.,특별 혜택 조건과 기간 구체성 부족,"이 문구를 준법관리자 검토 대상(WARNING 이상)으로 올릴지, PASS로 둘지 판단",미검수,,
+KO_WARN_018,ko,ko,대상 조건 부족,WARNING,PASS,"직장인 누구나 가능한 간편 대출, 지금 한도를 확인하세요.",누구나 가능 표현과 심사 조건 부족,"이 문구를 준법관리자 검토 대상(WARNING 이상)으로 올릴지, PASS로 둘지 판단",미검수,,
+KO_WARN_020,ko,ko,근거 없는 추천,WARNING,PASS,초보 투자자에게 가장 적합한 상품으로 추천드립니다.,적합성 판단 근거 부족,"이 문구를 준법관리자 검토 대상(WARNING 이상)으로 올릴지, PASS로 둘지 판단",미검수,,
+ID_VIOL_005,ojk,id,guaranteed monthly profit,VIOLATION,PASS,Keuntungan bulanan dijamin tanpa risiko kerugian.,Guaranteed profit and no risk,"이 문구를 준법관리자 검토 대상(WARNING 이상)으로 올릴지, PASS로 둘지 판단",미검수,,
+ID_VIOL_007,ojk,id,no loss,VIOLATION,PASS,Nasabah tidak mungkin mengalami kerugian dari produk ini.,No-loss guarantee,"이 문구를 준법관리자 검토 대상(WARNING 이상)으로 올릴지, PASS로 둘지 판단",미검수,,

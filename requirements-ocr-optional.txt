@@ -1,0 +1,5 @@
+# Optional local OCR upgrade.
+# Install this only in a separate virtual environment after the baseline app works.
+# Windows + Anaconda + Python 3.12 may hit Paddle inference DLL/model-loading issues.
+paddleocr>=3.0.0
+paddlepaddle>=3.0.0
