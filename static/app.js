@@ -1477,8 +1477,8 @@ async function reOpenAdd(mode, presetKw, region) {
   document.getElementById('rule-modal-body').innerHTML = `
     <div class="rl-meta"><div><span>관할</span> ${esc(RE_REGION_KO[rg] || rg)}</div></div>
     ${reGuideHtml('add')}
-    <label class="rl-lbl">① 위험 표현(키워드) <span class="rl-hint">— 잡고 싶은 표현. 예: '평생 보장'</span></label>
-    <input id="ra-kw" class="rl-input" value="${esc(presetKw || '')}" placeholder="예) 평생 보장">
+    <label class="rl-lbl">① 위험 표현(키워드) <span class="rl-hint">— 잡고 싶은 표현. 쉼표로 나누면 단어 사이에 다른 말이 껴도 잡습니다</span></label>
+    <input id="ra-kw" class="rl-input" value="${esc(presetKw || '')}" placeholder="예) 평생 보장  /  보험금, 무조건, 지급">
     <label class="rl-lbl">② 대상 법령 · 위반 유형</label>
     <div class="rl-row">
       <select id="ra-tree" class="rl-input">${treeOpts}</select>
