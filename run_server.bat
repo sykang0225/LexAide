@@ -17,7 +17,7 @@ set EASY_OCR_GPU=0
 
 echo.
 echo ============================================================
-echo   Cross-Check AI  FastAPI Server
+echo   LexAide AI  FastAPI Server
 echo   URL : http://127.0.0.1:8000
 echo   STOP: Ctrl+C
 echo ============================================================
