@@ -68,14 +68,14 @@ class DetectReq(BaseModel):
     text: str
     language: str = "ko"
     enable_llm: bool = True
-    enable_embedding: bool = False  # sentence-transformers 환경 미비 시 False 유지
+    enable_embedding: bool = True  # 유사 제재사례(FAISS) 층 — 실패 시 detector가 안전 스킵
 
 
 class CrossReq(BaseModel):
     ko_text: str
     id_text: str
     enable_llm: bool = True
-    enable_embedding: bool = False
+    enable_embedding: bool = True
 
 
 class ClassifyReq(BaseModel):

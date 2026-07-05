@@ -449,7 +449,7 @@ def detect(
     text: str,
     language: str = "ko",
     enable_llm: bool = True,
-    enable_embedding: bool = False,
+    enable_embedding: bool = True,
 ) -> DetectionResult:
     """
     전역 탐지 함수 — 외부 모듈에서 바로 호출 가능.
